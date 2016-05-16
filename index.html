@@ -1,39 +1,165 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Responsive Template 0.2</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles-main.css" />
+
+	<title>Site Title</title>	
+
+	<!-- Meta tags //-->
+	<meta charset="UTF-8" />
+	<meta name="author" content="Mathijs Depuydt" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	
+	<!-- Stylesheets //-->
+	<link rel="stylesheet" href="styles-main.css" />
+
+	<!-- Scripts //-->
+	<script src="script-main.js"></script>
+	
 </head>
 <body>
+
 <div id="wrapper">
+
 	<div id="top">
-		<header><h1><a href="#">Site Title</a></h1><p><a href="#">Site tagline</a></p></header>
+		
+		<header>
+		
+			<h1>
+				<a href="#">Site title</a>
+			</h1>
+			
+			<p>
+				<a href="#">Site Tagline</a>
+			</p>
+			
+		</header>
+		
 	</div>
+	<!-- end #top //-->
+	
+	
 	<div id="middle">
+		
 		<div id="content">
+		
       <section>
+      
         <h2>Articles</h2>
+
         <div class="box">
-          <article></article>
+        
+          <article>
+            <header>
+              <h3><a href="#">Title of the Article</a></h3>
+              <time datetime="2016-04-26">Published on 14/05/2016</time>
+              <ul class="categories">
+                <li><a href="#">Category A</a></li>
+                <li><a href="#">Category B</a></li>
+              </ul>
+              <p class="author"><a href="#">Published by Mathijs Depuydt</a></p>
+              <p class="comments"><a href="#"># Comments</a></p>
+            </header>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper a risus vitae rutrum. In venenatis, urna vitae ultricies rhoncus, dui mi laoreet lectus, ac volutpat neque orci id enim. Ut vel lacus nec quam posuere efficitur. Suspendisse potenti. Donec congue est vel massa elementum, a venenatis elit ultrices. Nulla vestibulum a arcu vitae rhoncus. Aliquam pulvinar varius eleifend.</p>
+            <p>Ut risus diam, lobortis vel efficitur facilisis, efficitur et sem. Duis pellentesque velit tellus. Donec ac placerat lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sit amet sodales odio. Ut purus eros, tincidunt at consequat placerat, mollis a urna. Sed elementum euismod odio vel sodales.</p>
+            <p>Integer a vehicula est. Donec scelerisque dignissim velit, rhoncus posuere augue hendrerit ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur porta ante mi, vitae porta velit luctus vel. Ut sollicitudin justo purus, nec sodales sapien commodo vitae. Mauris ullamcorper sem ex, id pellentesque dui faucibus venenatis. Donec tincidunt congue hendrerit. Suspendisse id justo elementum, cursus eros pulvinar, pretium risus.</p>
+            
+            <footer>
+              <p class="more"><a href="#">Read more</a></p>
+            </footer>
+          </article>
+          
         </div>
+
         <div class="box">
-          <article></article>
+        
+          <article>
+            <header>
+              <h3><a href="#">Title of the Article</a></h3>
+              <time datetime="2016-04-26">Published on 14/05/2016</time>
+              <ul class="categories">
+                <li><a href="#">Category A</a></li>
+                <li><a href="#">Category B</a></li>
+              </ul>
+              <p class="author"><a href="#">Published by Mathijs Depuydt</a></p>
+              <p class="comments"><a href="#"># Comments</a></p>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper a risus vitae rutrum. In venenatis, urna vitae ultricies rhoncus, dui mi laoreet lectus, ac volutpat neque orci id enim. Ut vel lacus nec quam posuere efficitur. Suspendisse potenti. Donec congue est vel massa elementum, a venenatis elit ultrices. Nulla vestibulum a arcu vitae rhoncus. Aliquam pulvinar varius eleifend.</p>
+            <p>Ut risus diam, lobortis vel efficitur facilisis, efficitur et sem. Duis pellentesque velit tellus. Donec ac placerat lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sit amet sodales odio. Ut purus eros, tincidunt at consequat placerat, mollis a urna. Sed elementum euismod odio vel sodales.</p>
+            <p>Integer a vehicula est. Donec scelerisque dignissim velit, rhoncus posuere augue hendrerit ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur porta ante mi, vitae porta velit luctus vel. Ut sollicitudin justo purus, nec sodales sapien commodo vitae. Mauris ullamcorper sem ex, id pellentesque dui faucibus venenatis. Donec tincidunt congue hendrerit. Suspendisse id justo elementum, cursus eros pulvinar, pretium risus.</p>
+            <footer>
+              <p class="more"><a href="#">Read more</a></p>
+            </footer>
+          </article>
+          
         </div>
+      
       </section>
+
     </div>
+		<!-- end #content //-->
+		
+		
 		<div id="sidebar">
-	     <aside>
-        <div class="widget"></div>
-        <div class="widget"></div>
-        <div class="widget"></div>
+		
+      <aside>
+      
+        <div class="widget">
+        <form action="" method="get">
+          <fieldset>
+            <!-- search input -->
+            <input type="text" name="s" value="type here..." />
+
+            <!-- search button -->
+            <button type="submit">Search</button>
+          </fieldset>
+        </form>
+        </div>
+      
+        <div class="widget">
+          <h4>Widget title</h4>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </div>
+      
+        <div class="widget">
+          <h4>Widget title</h4>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </div>
+        
       </aside>
-    </div>
+        
+		</div>
+		<!-- end #sidebar //-->
+		
+     <div class="push"></div>
 	</div>
-  <div class="push"></div>
-</div>	
-<div id="bottom">
-  <footer><p>Copyright &copy; 2016 Site Title.</p></footer>
+	<!-- end #middle //-->
+
+	
 </div>
+<!-- end #wrapper //-->
+
+
+<div id="bottom">
+  
+  <footer>
+  
+    <p>Copyright &copy; 2016 Site Title.</p>
+    
+  </footer>
+  
+</div>
+<!-- end #bottom //-->
+	
+	
 </body>
 </html>
