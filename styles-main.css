@@ -7,7 +7,8 @@
 
 /*
  * COLORS
- 
+
+all color                   c       #212121;
 wrapper background          wbg     #95AABF; 
 top background              tb      #ffffff;
 top h1 color                thc     #666666
@@ -17,10 +18,16 @@ middle background           mb      #95AABF;
 content box background      cbb     #ffffff;
 box header color            bhc     #666666;
 box header a hover          bhah    #000000;
+article time color          atc     #989898;
+categories bg               cb      #4caf50;
+categories color            cc      #ffffff;
+categories bg hover         cbh     #357A38;
+author comments bg          acbg    #f5f5f5;
+author comments color       acc     #989898;
+author comments hover       acch    #454545;
 sidebar widget background   swb     #dddddd;
 bottom color                bc      #90a4ae;
 bottom background           bb      #37474F;
- 
  */
  
 /*
@@ -43,6 +50,7 @@ bottom background           bb      #37474F;
   margin: 0;
   padding: 0;
   border: 0;
+  color: /*c*/#212121;
 }
 a {
   color: inherit;
@@ -73,11 +81,11 @@ html, body {
   padding: 1em;
   text-align: center;
 }
-#top header h1 {
+#top h1 {
   font-size: 1.8em;
   color: #666666;
 }
-#top header p {
+#top p {
   font-size: 1em;
   color: #999999;
 }
@@ -96,36 +104,87 @@ html, body {
 #content {
   width: 100%;
   float: left;
+  padding-bottom: 2em;
 }
-#content section {
+section {
   margin: 0 0.7em;
 }
-#content section h2 {
+section > h2 {
   display: none;
 }
 
-#content section .box {
+.box {
   background: /*cbb*/#ffffff;
   min-height: 6em;
   margin-bottom: 1.5em;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-#content section .box article {
+article {
   padding: 2em;
 }
-#content section .box article h3 {
+article header h3 {
   font-size: 2em;
   color: /*bhc*/#666666;
   font-weight: normal;
 }
-#content section .box article h3 a:hover {
+article h3 a:hover {
   color: /*bhah*/#000000;
   text-decoration: underline;
 }
-#content section .box article footer {
+article time {
+  display: block;
+  color: /*atc*/#989898;
+  text-transform: uppercase;
+  font-size: 0.8em;
   margin-top: 1em;
 }
-#content section .box article footer a {
+.categories a {
+  color: /*cc*/#ffffff;
+}
+.categories > li, .author, .comments {
+  float: left;
+  padding-top: 1em;
+}
+.categories a, .author > a, .comments > a {
+  display: block;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  padding: 0.4em 0.5em;
+  margin-right: 0.5em;
+}
+.categories a:hover, .author > a:hover, .comments > a:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+}
+.categories a {
+  background: /*cb*/#4caf50;
+}
+.categories a:hover {
+  background: /*cbh*/#357A38;
+}
+.author > a, .comments > a {
+  background: /*acbg*/#f5f5f5;
+  color: /*acc*/#989898;
+}
+.author > a:hover, .comments >a:hover {
+  color: /*acch*/#454545;
+}
+article > p:first-of-type {
+  clear: left;
+  padding: 1.5em 0 0 0;
+}
+article > p {
+  padding: 0.5em 0;
+  word-wrap: break-word;
+  hyphens: auto;
+  font-family: "Open Sans", sans-serif, Arial, serif;
+}
+article > p:last-of-type {
+  padding-bottom: 1em;
+}
+article footer {
+  margin-top: 1em;
+}
+article footer a {
   display: block;
   text-align: center;
   padding: 1em 2em;
@@ -135,7 +194,7 @@ html, body {
   font-size: 0.8em;
   width: 8em;
 }
-#content section .box article footer a:hover {
+article footer a:hover {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.25);
   background: #314047;
 }
@@ -143,13 +202,14 @@ html, body {
  * Sidebar Styles
  */
 #sidebar {
+  padding-bottom: 2em;
   width: 100%;
   float: left;
 }
-#sidebar aside {
+aside {
   margin: 0 0.7em;
 }
-#sidebar aside .widget {
+.widget {
   background: /*swb*/#dddddd;
   min-height: 4em;
   margin-bottom: 1em;
@@ -157,8 +217,7 @@ html, body {
 }
 
 .push {
-  padding-bottom: 2em;
-  height: 6em;
+  height: 4em;
   clear: left;
 }
 /*
@@ -173,7 +232,7 @@ html, body {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   */
 }
-#bottom footer {
+#bottom > footer {
   background: /*bb*/#37474F;
   font-size: 0.8em;
   text-align: center;
